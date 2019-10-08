@@ -38,49 +38,49 @@ const items = ['Pencil', 'Notebook', 'yo-yo', 'Gum'];
   console.log(test2); // "this Pencil is worth a million dollars!"
 */
 //----------------------------------------
-// function length(arr){
-//   return console.log(arr.length);
-// }
+function length(arr){
+  return console.log(arr.length);
+}
 
-// function getLength(cb) {
-//   // getLength passes the length of the array into the callback.
-//   return cb(items);
-// }
+function getLength(cb) {
+  // getLength passes the length of the array into the callback.
+  return cb(items);
+}
 
 // getLength(length);
 
 //----------------------------------------
-// function pop(arr){
-//   return console.log(arr.pop);
-// }
+function pop(arr){
+  return console.log(arr.pop);
+}
 
-// function last(cb) {
-//   // last passes the last item of the array into the callback.
-//   return cb(items);
-// }
+function last(cb) {
+  // last passes the last item of the array into the callback.
+  return cb(items);
+}
 
 // last(pop);
 
 //----------------------------------------
-// function add(num1, num2){
-//   return console.log(num1 + num2);
-// }
+function add(num1, num2){
+  return console.log(num1 + num2);
+}
 
-// function sumNums(x, y, cb) {
-//   // sumNums adds two numbers (x, y) and passes the result to the callback.
-//   return cb(x,y);
-// }
+function sumNums(x, y, cb) {
+  // sumNums adds two numbers (x, y) and passes the result to the callback.
+  return cb(x,y);
+}
 
 // sumNums(1,3,add);
 //----------------------------------------
-// function multiply(num1, num2){
-//   return console.log(num1 * num2);
-// }
+function multiply(num1, num2){
+  return console.log(num1 * num2);
+}
 
-// function multiplyNums(x, y, cb) {
-//   // multiplyNums multiplies two numbers and passes the result to the callback.
-//   return cb(x,y);
-// }
+function multiplyNums(x, y, cb) {
+  // multiplyNums multiplies two numbers and passes the result to the callback.
+  return cb(x,y);
+}
 
 // multiplyNums(1,3,multiply);
 //-----------------------------------------
@@ -99,7 +99,7 @@ function contains(item, list, cb) {
   return cb(item,list);
 }
 
-contains("sdfg","asdf", check);
+// contains("sdfg","asdf", check);
 //-----------------------------------------
 /* STRETCH PROBLEM */
 
