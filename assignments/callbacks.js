@@ -37,37 +37,70 @@ const items = ['Pencil', 'Notebook', 'yo-yo', 'Gum'];
   const test2 = firstItem(items, logExorbitantPrice);
   console.log(test2); // "this Pencil is worth a million dollars!"
 */
+//----------------------------------------
+// function length(arr){
+//   return console.log(arr.length);
+// }
 
+// function getLength(cb) {
+//   // getLength passes the length of the array into the callback.
+//   return cb(items);
+// }
 
-function getLength(arr, cb) {
-  // getLength passes the length of the array into the callback.
-}
-function itemLength(){
-  return items.length;
-}
-const lengthCb = getLength(items, itemLength);
+// getLength(length);
 
-console.log(lengthCb);
+//----------------------------------------
+// function pop(arr){
+//   return console.log(arr.pop);
+// }
 
+// function last(cb) {
+//   // last passes the last item of the array into the callback.
+//   return cb(items);
+// }
 
+// last(pop);
 
-function last(arr, cb) {
-  // last passes the last item of the array into the callback.
-}
+//----------------------------------------
+// function add(num1, num2){
+//   return console.log(num1 + num2);
+// }
 
-function sumNums(x, y, cb) {
-  // sumNums adds two numbers (x, y) and passes the result to the callback.
-}
+// function sumNums(x, y, cb) {
+//   // sumNums adds two numbers (x, y) and passes the result to the callback.
+//   return cb(x,y);
+// }
 
-function multiplyNums(x, y, cb) {
-  // multiplyNums multiplies two numbers and passes the result to the callback.
+// sumNums(1,3,add);
+//----------------------------------------
+// function multiply(num1, num2){
+//   return console.log(num1 * num2);
+// }
+
+// function multiplyNums(x, y, cb) {
+//   // multiplyNums multiplies two numbers and passes the result to the callback.
+//   return cb(x,y);
+// }
+
+// multiplyNums(1,3,multiply);
+//-----------------------------------------
+function check(x, y){
+   if (items.includes(x,y)){
+     return console.log(true);
+   }
+   else{
+     return console.log(false);
+   };
 }
 
 function contains(item, list, cb) {
   // contains checks if an item is present inside of the given array/list.
   // Pass true to the callback if it is, otherwise pass false.
+  return cb(item,list);
 }
 
+contains("sdfg","asdf", check);
+//-----------------------------------------
 /* STRETCH PROBLEM */
 
 function removeDuplicates(array, cb) {
