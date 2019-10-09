@@ -54,16 +54,16 @@ function pop(arr){
   return console.log(arr.pop);
 }
 
-function last(cb) {
+function last(cb, items) {
   // last passes the last item of the array into the callback.
-  return cb(items);
+  return cb(items.length -1);
 }
 
 // last(pop);
 
 //----------------------------------------
-function add(num1, num2){
-  return console.log(num1 + num2);
+function add(num1, num2, cb){
+  return cb(num1 + num2);
 }
 
 function sumNums(x, y, cb) {
